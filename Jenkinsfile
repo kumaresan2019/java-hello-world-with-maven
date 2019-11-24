@@ -11,7 +11,7 @@ stage('cloning repo'){
 
 stage('Testing')
 {
-sh 'sudo /root/apache-maven-3.6.2/bin/mvn clean test'
+sh 'mvn clean test'
 }
 
 stage('Build the code')
