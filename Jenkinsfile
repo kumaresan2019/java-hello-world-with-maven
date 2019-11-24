@@ -11,12 +11,12 @@ stage('cloning repo'){
 
 stage('Testing')
 {
-sh './root/apache-maven-3.6.2/bin/mvn clean test'
+sh '/root/apache-maven-3.6.2/bin/mvn clean test'
 }
 
 stage('Build the code')
 {
-sh './root/apache-maven-3.6.2/bin/mvn clean install'
+sh 'root/apache-maven-3.6.2/bin/mvn clean install'
 }
 
 stage('saving artifacts')
